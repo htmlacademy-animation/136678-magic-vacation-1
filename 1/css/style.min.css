@@ -1475,9 +1475,12 @@ img {
     margin-right: 30px;
     padding: 0 56px;
     height: 60px;
-    width: calc(100% - 210px);
+    width: 0;
     font-size: 24px;
     border-radius: 30px;
+  }
+  .active .form__field {
+    width: calc(100% - 210px);
   }
 }
 @media (orientation: portrait) {
@@ -3872,7 +3875,7 @@ img {
   opacity: 1;
   pointer-events: auto;
 }
-.social-block--active .social-block__link {
+.social-block:hover .social-block__link {
   opacity: 1;
 }
 
